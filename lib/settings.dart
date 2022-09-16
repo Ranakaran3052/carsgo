@@ -31,14 +31,13 @@ class _settingsState extends State<settings> {
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
             ),
           ),
-          Container()
-          // Container(
-          //   child: Text(
-          //     "update",
-          //     textDirection: TextDirection.ltr,
-          //     style: TextStyle(fontSize: 35, color: primaryColor),
-          //   ),
-          // ),
+          Container(
+            child: Text(
+              "update",
+              textDirection: TextDirection.ltr,
+              style: TextStyle(fontSize: 35, color: primaryColor),
+            ),
+          ),
         ],
       ),
     );
