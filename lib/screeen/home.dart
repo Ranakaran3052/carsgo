@@ -1,7 +1,9 @@
 import 'package:carsgo/congif/color.dart';
-import 'package:carsgo/congif/message.dart';
-import 'package:carsgo/profile.dart';
-import 'package:carsgo/settings.dart';
+import 'package:carsgo/drawer/message.dart';
+import 'package:carsgo/drawer/profile.dart';
+import 'package:carsgo/school.dart';
+import 'package:carsgo/drawer/settings.dart';
+import 'package:carsgo/screeen/listveiwpage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -14,7 +16,19 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _selectedIndex = 0;
+  // int _selectedIndex = 1;
+  // static const TextStyle optionStyle =
+  //     TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
+  // static const List<Widget> _widgetOptions = <Widget>[
+  //   SchoolPage(),
+  // ];
+
+  // void _onItemTapped(int index) {
+  //   setState(() {
+  //     _selectedIndex = index;
+  //   });
+  // }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -70,6 +84,9 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+      // body: Center(
+      //   child: _widgetOptions.elementAt(_selectedIndex),
+      // ),
       body: Container(
         //body area
         margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
@@ -136,7 +153,10 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       // floatingActionButtonLocation: FloatingActionButtonLocation.,
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => listveiwpage()));
+        },
         child: Icon(Icons.add),
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -162,9 +182,9 @@ class _MyHomePageState extends State<MyHomePage> {
             backgroundColor: Colors.pink,
           ),
         ],
-        currentIndex: _selectedIndex,
+        //currentIndex: _selectedIndex,
         selectedItemColor: Colors.amber[800],
-        // onTap: _onItemTapped,
+        //onTap: _onItemTapped,
       ),
     );
   }

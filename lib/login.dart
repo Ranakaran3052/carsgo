@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:core';
 
 import 'package:carsgo/congif/color.dart';
-import 'package:carsgo/home.dart';
+import 'package:carsgo/screeen/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';

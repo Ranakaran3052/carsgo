@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-import 'home.dart';
+import '../screeen/home.dart';
 
 class profile extends StatefulWidget {
   const profile({super.key});
